@@ -17,9 +17,8 @@ export class ArticleComponent implements OnInit {
   obj_art: Articolo;
 
   constructor() {
-    console.log(this.obj_art);
-    this.title = this.obj_art.titolo;
-    this.link = this.obj_art.collegamento;
+    this.title = "Google";
+    this.link = "www.google.com";
     this.votes = 10;
   }
 

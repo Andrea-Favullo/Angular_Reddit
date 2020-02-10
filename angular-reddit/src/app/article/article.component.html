@@ -3,12 +3,12 @@
 </div>
 
 <div class="card-body">
-  <a href="{{ link }}"> {{ title }}</a>
+  <a href="{{ obj_art.collegamento }}"> {{ obj_art.titolo }}</a>
 </div>
 
 <div class="card-footer">
   <div class="btn-group">
-    <a href (click)="voteUp()" class="btn btn-secondary"> upvote </a>
-    <a href (click)="voteDown()" class="btn btn-secondary"> downvote </a>
+    <button (click)="voteUp()" class="btn btn-secondary"> upvote </button>
+    <button (click)="voteDown()" class="btn btn-secondary"> downvote </button>
   </div>
 </div>

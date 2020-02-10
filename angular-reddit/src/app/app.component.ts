@@ -14,8 +14,6 @@ export class AppComponent {
 
   addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
 
-    console.log(`Adding article title: ${title.value} and link: ${link.value}`);
-
     let titolo:string = title.value;
     let collegamento:string = link.value;
 
@@ -23,10 +21,11 @@ export class AppComponent {
 
     this.infoArticolo.push( art );
 
+    console.log(`Vettore di articoli:`);
     console.log(this.infoArticolo);
+    console.log(`Articolo creato:`);
     console.log(art);
-    console.log(art.titolo);
-    console.log(art.collegamento);
+    console.log(`Titolo: ${art.titolo} \nCollegamento: ${art.collegamento}`);
 
     return false;
   }
