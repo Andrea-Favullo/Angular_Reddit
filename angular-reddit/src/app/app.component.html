@@ -11,8 +11,9 @@
   <button (click)="addArticle(newtitle, newlink)"> <!--Passiamo le variabili come parametro -->
   Submit link
   </button>
-</form>
 
-<ul>
-  <li *ngFor="let article of infoArticolo"> <app-article [obj_art]="article" ></app-article> </li>
-</ul>
+  <ul>
+    <li *ngFor="let article of infoArticolo"> <app-article [obj_art]="article" ></app-article> </li>
+  </ul>
+
+</form>
