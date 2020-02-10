@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ArticleComponent } from './article/article.component';
+import { Articolo } from './articolo';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +9,13 @@ import { ArticleComponent } from './article/article.component';
 })
 export class AppComponent {
 
-  infoArticolo: articolo[] = [];
+  infoArticolo: Articolo[] = [];
 
   addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
 
     console.log(`Adding article title: ${title.value} and link: ${link.value}`);
 
-    infoArticolo.push( new articolo(title.value, link.value) )
+    this.infoArticolo.push( new Articolo(title.value, link.value) )
 
     return false;
   }

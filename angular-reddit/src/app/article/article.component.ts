@@ -1,4 +1,5 @@
 import { Component, OnInit, HostBinding, Input } from '@angular/core';
+import { Articolo } from '../articolo';
 
 @Component({
   selector: 'app-article',
@@ -12,10 +13,13 @@ export class ArticleComponent implements OnInit {
   title: string;
   link: string;
 
+  @Input()
+  obj_art: Articolo;
+
   constructor() {
-    //this.title = this.article.titolo;
-    //this.link = this.article.collegamento;
-    //this.votes = 10;
+    this.title = this.obj_art.titolo;
+    this.link = this.obj_art.collegamento;
+    this.votes = 10;
   }
 
   voteUp() {
