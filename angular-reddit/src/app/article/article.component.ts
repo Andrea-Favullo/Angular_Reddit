@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding, Input } from '@angular/core';
 
 @Component({
   selector: 'app-article',
@@ -13,9 +13,9 @@ export class ArticleComponent implements OnInit {
   link: string;
 
   constructor() {
-    this.title = 'Angular 2';
-    this.link = 'http://angular.io';
-    this.votes = 10;
+    //this.title = this.article.titolo;
+    //this.link = this.article.collegamento;
+    //this.votes = 10;
   }
 
   voteUp() {
